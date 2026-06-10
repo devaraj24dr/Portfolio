@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { gsap } from "gsap";
 import { TextPlugin } from "gsap/TextPlugin";
-import { ArrowDown, Mail, Phone } from "lucide-react";
+import { ArrowDown, Download, Mail, Phone } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "./SocialIcons";
 import dynamic from "next/dynamic";
 
@@ -157,6 +157,15 @@ export default function Hero() {
           >
             View Projects
           </button>
+          <a
+            id="hero-resume-download"
+            href="/Devaraj_P_Resume.docx"
+            download="Devaraj_P_Resume.docx"
+            className="btn-ghost flex items-center gap-2"
+          >
+            <Download size={13} />
+            Download Resume
+          </a>
           <a
             id="hero-contact-cta"
             href="mailto:devady2409@gmail.com"
